@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  color: white;
+  min-height: 200vh;
+}
+.box {
+  border: 6px solid white;
+  transition: 0.25s ease;
+  background: black;
+  padding: 10px;
+}
+p {
+  visibility: hidden;
+  width: 240px;
+  margin: 10px auto 0;
+  opacity: 0;
+  transition: 0.8s ease-out;
+  transform: translateX(-200px);
+}
+
+.showresponse {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.mousemove {
+  height: 50px;
+  width: 50px;
+  border: 2px solid pink;
+  position: absolute;
+  /* car il vadevoir etre libre de se deplacer sur toute a page en suivant la souris  */
+  border-radius: 50px;
+  /* pour en faire un cercle  */
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+  z-index: -1;
+}
